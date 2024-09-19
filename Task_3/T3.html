@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Landing Page</title>
+    <link rel="stylesheet" href="T3.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">ShopEase</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#learn-more">Learn More</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="#Cart" id="cart">Cart (0)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+   
+
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-text">
+            <h1>Welcome to ShopEase</h1>
+            <p>Best deals on the latest products!</p><br><br>
+            <a href="#products" class="cta">Shop Now</a>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products-section">
+        <h2>Our Products</h2>
+        <div class="product-list">
+            <div class="product-item">
+                <img src="product1.avif" alt="Microwave Oven" >
+                <h3>Microwave Oven</h3>
+                <p>Rs.6890</p>
+                <button onclick="addToCart('Microwave Oven', 6890)">Add to Cart</button>
+                <button onclick="buyNow('Microwave Oven', 6890)">Buy Now</button>
+            </div>
+            <div class="product-item">
+                <img src="product2.jpg" alt="Steam-Iron">
+                <h3>Steam-Iron</h3>
+                <p>Rs. 1570</p>
+                <button onclick="addToCart('Steam-Iron', 1570)">Add to Cart</button>
+                <button onclick="buyNow('Steam-Iron', 1570)">Buy Now</button>
+            </div>
+            
+            <div class="product-item">
+                <img src="product3.jpg" alt="Chair">
+                <h3>Chairs</h3>
+                <p>Rs. 4999</p>
+                <button onclick="addToCart('Chairs',  4999)">Add to Cart</button>
+                <button onclick="buyNow('Chairs',  4999)">Buy Now</button>
+            </div>
+            <div class="product-item">
+                <img src="product4.webp" alt="Bags">
+                <h3>Trolley Bag</h3>
+                <p>Rs. 1799</p>
+                <button onclick="addToCart('Trolley Bag',  1799)">Add to Cart</button>
+                <button onclick="buyNow('Trolley Bag',  1799)">Buy Now</button>
+            </div>
+            <div class="product-item">
+                <img src="product5.avif" alt="Sunglasses">
+                <h3>Sunglasses</h3>
+                <p>Rs. 898</p>
+                <button onclick="addToCart('Sunglasses',  898)">Add to Cart</button>
+                <button onclick="buyNow('Sunglasses',  898)">Buy Now</button>
+            </div>
+            <div class="product-item">
+                <img src="product6.jpg" alt="Dinner-Set">
+                <h3>Crocrey Set</h3>
+                <p>Rs. 2949</p>
+                <button onclick="addToCart('Crocrey Set',  2949)">Add to Cart</button>
+                <button onclick="buyNow('Crocrey Set',  2949)">Buy Now</button>
+            </div>
+            <div class="product-item">
+                <img src="product7.webp" alt="Mixer">
+                <h3>Mixer</h3>
+                <p>Rs. 2477</p>
+                <button onclick="addToCart('Mixer',  2477)">Add to Cart</button>
+                <button onclick="buyNow('Mixer',  2477)">Buy Now</button>
+            </div>
+            <div class="product-item">
+                <img src="product8.webp" alt="Washing-Machine">
+                <h3>Washing Machine</h3>
+                <p>Rs. 35490</p>
+                <button onclick="addToCart('Washing Machine',  35490)">Add to Cart</button>
+                <button onclick="buyNow('Washing Machine',  35490)">Buy Now</button>
+            </div>
+            <div class="product-item">
+                <img src="product9.webp" alt="Refrigerator">
+                <h3>Refrigerator</h3>
+                <p>Rs.19689</p>
+                <button onclick="addToCart('Refrigerator', 19689)">Add to Cart</button>
+                <button onclick="buyNow('Refrigerator', 19689)">Buy Now</button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Learn More Section -->
+    <section id="learn-more" class="learn-more">
+        <h2>Learn More</h2>
+        <p>At ShopNow, we provide the best products with unmatched customer service. Our platform offers an easy and secure shopping experience, ensuring that you find the products you need at unbeatable prices.</p><br><br>
+        <a href="#products" class="learn-more">Learn More</a>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact" class="contact-section">
+        <h2>Contact Us</h2>
+        <p>We'd love to hear from you! Feel free to reach out for any queries or support.</p>
+        <form class="contact-form">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+        <br>
+        <div id="formMessage" class="form-message"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 ShopEase. All rights reserved.</p>
+    </footer>
+
+    <script src="T3.js"></script>
+</body>
+</html>
